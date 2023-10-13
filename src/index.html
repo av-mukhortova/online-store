@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo_group">
+                <img class="logo" src="./assets/img/bike_logo.png" />
+                <h1>BEST<br>BIKES</h1>
+            </div>
+            <form>
+                <img class="icon" src="./assets/img/search_icon.png" />
+                <input type="search" name="text" class="search" placeholder="Search here!" autocomplete="off" autofocus>
+            </form>
+            <div class="cart_group">
+                <img class="icon" src="./assets/img/cart_icon.png" />
+                <span class="cart_group__count">0</span>
+            </div>
+        </header>
+        <main>
+            <div class="settings">
+                <form class="sort">
+                    <h5>SORT BY</h5>
+                    <div class="sort_category">
+                        <select>
+                            <option>Name (A-Z)</option>
+                            <option>Name (Z-A)</option>
+                            <option>Year ↑</option>
+                            <option>Year ↓</option>
+                        </select>
+                    </div>
+                </form>
+                <form class="filters">
+                    <h5>RELEASE YEAR</h5>
+                    <div id="slider_year"></div>
+                    <h5>QUANTITY IN STOCK</h5>
+                    <div id="slider_amount"></div>
+                    <h5>BRAND</h5>
+                    <div class="filters_brands">
+                        <select class="brands">
+                            <option>All</option>
+                            <option>Aspect</option>
+                            <option>BEARBIKE</option>
+                            <option>Felt</option>
+                            <option>Format</option>
+                            <option>Rocky Mountain</option>
+                            <option>Royal Baby</option>
+                            <option>SCOTT</option>
+                            <option>Welt</option>
+                        </select>
+                    </div>
+                    <h5>COLOR</h5>
+                    <div class="filters_colors">
+                        <button name="color" class="color_btn" data-color="red"
+                            style="background: rgb(255,0,0);"></button>
+                        <button name="color" class="color_btn" data-color="green"
+                            style="background: rgb(0,255,0);"></button>
+                        <button name="color" class="color_btn" data-color="blue"
+                            style="background: rgb(0,0,255);"></button>
+                        <button name="color" class="color_btn" data-color="black"
+                            style="background: rgb(0,0,0);"></button>
+                    </div>
+                    <h5>SIZE</h5>
+                    <div class="filters_size">
+                        <select class="size">
+                            <option>All</option>
+                            <option>Adult</option>
+                            <option>Teenager</option>
+                            <option>Child</option>
+                        </select>
+                    </div>
+                    <div class="filters_popular">
+                        <input type="checkbox" id="popular">
+                        <label for="popular">ONLY POPULAR</label>
+                    </div>
+                    <div class="reset_btn">
+                        <button type="button" class="reset_filters">RESET FILTERS</button>
+                        <button type="button" class="reset_settings">RESET SETTINGS</button>
+                    </div>
+                </form>
+            </div>
+            <div class="goods">
+                <h2 class="nothingFound hired">Sorry, no matches found!</h2>
+            </div>
+        </main>
+        <footer>
+            <a id="author" href="https://github.com/rrroeva">Alina Mukhortova, 2022</a>
+            <a href="https://rs.school/js/">
+                <img id="rsslogo" src="./assets/img/rslogo.svg" alt="logo rsschool" />
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
